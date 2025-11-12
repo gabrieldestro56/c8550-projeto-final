@@ -75,11 +75,6 @@ mutmut html
 
 ## Testes Específicos
 
-### Testes de API/REST
-- ✅ Testes para todos os endpoints
-- ✅ Validação de status codes
-- ✅ Validação de respostas JSON
-
 ### Testes de Exceções
 - ✅ Verificação de lançamento correto
 - ✅ Testes de mensagens de erro

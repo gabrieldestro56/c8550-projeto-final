@@ -1,2 +1,0 @@
-"""Módulo da API REST"""
-

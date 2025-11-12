@@ -4,16 +4,18 @@ Projeto desenvolvido para a disciplina **CC8550 - Simulação e Teste de Softwar
 
 ## 📋 Descrição
 
-Sistema completo de gerenciamento de biblioteca com operações CRUD, regras de negócio complexas, interface CLI interativa e API REST.
+Sistema completo de gerenciamento de biblioteca com operações CRUD, regras de negócio complexas e interface CLI interativa.
 
 ## 🚀 Instalação
 
 1. **Instale as dependências:**
+
 ```bash
 pip install -r requirements.txt
 ```
 
 2. **Inicialize o banco de dados:**
+
 ```bash
 python -m src.database.init_db
 ```
@@ -23,40 +25,35 @@ python -m src.database.init_db
 ### Interface CLI (Terminal Interativo)
 
 Execute o sistema pela interface CLI:
+
 ```bash
 python run_cli.py
 ```
 
 Ou:
+
 ```bash
 python -m src.cli.main
 ```
 
 A interface CLI oferece um menu interativo para gerenciar:
+
 - 📖 Livros
 - 👥 Usuários
 - 📋 Empréstimos
 - ✍️ Autores
 - 📂 Categorias
 
-### API REST (Opcional)
-
-Para usar a API REST:
-```bash
-uvicorn src.api.main:app --reload
-```
-
-- API: http://localhost:8000
-- Documentação: http://localhost:8000/docs
-
 ## 🧪 Testes
 
 ### Executar todos os testes:
+
 ```bash
 pytest
 ```
 
 ### Testes com cobertura:
+
 ```bash
 pytest --cov=src --cov-report=html
 ```
@@ -64,6 +61,7 @@ pytest --cov=src --cov-report=html
 O relatório de cobertura estará em `htmlcov/index.html`
 
 ### Testes específicos:
+
 ```bash
 # Testes unitários
 pytest tests/unit/
@@ -73,12 +71,10 @@ pytest tests/integration/
 
 # Testes funcionais
 pytest tests/functional/
-
-# Testes de API
-pytest tests/api/
 ```
 
 ### Testes de mutação:
+
 ```bash
 mutmut run
 mutmut html
@@ -92,7 +88,6 @@ mutmut html
 │   ├── models/          # Modelos de dados
 │   ├── repositories/    # Camada de acesso a dados
 │   ├── services/        # Lógica de negócio
-│   ├── api/             # Endpoints REST
 │   ├── cli/             # Interface CLI interativa
 │   ├── database/        # Configuração do banco
 │   ├── exceptions/      # Exceções personalizadas
@@ -101,8 +96,7 @@ mutmut html
 ├── tests/               # Testes
 │   ├── unit/            # Testes unitários
 │   ├── integration/     # Testes de integração
-│   ├── functional/      # Testes funcionais
-│   └── api/             # Testes de API
+│   └── functional/      # Testes funcionais
 ├── config.json          # Configurações
 └── requirements.txt     # Dependências
 ```
@@ -115,7 +109,6 @@ mutmut html
 - ✅ Tratamento de exceções personalizado
 - ✅ Validação robusta de dados
 - ✅ Interface CLI interativa
-- ✅ API REST completa
 - ✅ Cobertura de testes >= 80%
 
 ## 📝 Requisitos

@@ -30,7 +30,6 @@
 - Análise: Taxa de mutantes mortos
 
 ### Testes Específicos por Tipo (15%)
-- Testes de API/REST
 - Testes de Exceções
 - Testes com Mocks e Stubs
 - Testes de Performance

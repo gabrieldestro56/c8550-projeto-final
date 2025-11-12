@@ -14,14 +14,12 @@ Desenvolver um sistema de gerenciamento de biblioteca com arquitetura modular, s
 - Operações CRUD completas
 - Regras de negócio complexas
 - Interface CLI interativa
-- API REST completa
 - Sistema de validação robusto
 - Tratamento de exceções personalizado
 
 ### Tecnologias
 
 - Python 3.8+
-- FastAPI
 - SQLAlchemy
 - SQLite
 - Pytest
