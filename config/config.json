@@ -1,0 +1,24 @@
+{
+  "database": {
+    "url": "sqlite:///./biblioteca.db",
+    "echo": false
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/biblioteca.log",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  },
+  "business_rules": {
+    "max_emprestimos_por_usuario": 5,
+    "dias_emprestimo": 14,
+    "multa_diaria": 2.50,
+    "idade_minima_usuario": 12
+  },
+  "api": {
+    "host": "0.0.0.0",
+    "port": 8000,
+    "title": "Sistema de Gerenciamento de Biblioteca",
+    "version": "1.0.0"
+  }
+}
+

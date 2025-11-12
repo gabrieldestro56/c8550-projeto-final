@@ -1,0 +1,22 @@
+[run]
+source = src
+omit = 
+    */cli/*
+    */controllers/*
+    */utils/file_handler.py
+    */__pycache__/*
+    */tests/*
+    */migrations/*
+    */venv/*
+    */env/*
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    raise AssertionError
+    raise NotImplementedError
+    if __name__ == .__main__.:
+    if TYPE_CHECKING:
+    @abstractmethod
+
